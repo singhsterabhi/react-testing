@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class Headline extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const { header, desc } = this.props;
 
