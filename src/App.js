@@ -46,7 +46,7 @@ class App extends Component {
       emitEvent: this.fetch
     };
     return (
-      <div className="App">
+      <div className="App" data-test="AppComponent">
         <Header></Header>
         <section className="main">
           <Headline
