@@ -30,13 +30,16 @@ class App extends Component {
   }
   fetch = () => {
     this.props.fetchPosts();
-    this.exampleMethod();
+    this.exampleMethod_updatesState();
   };
-  exampleMethod = () => {
+  exampleMethod_updatesState = () => {
     const { hideBtn } = this.state;
     this.setState({
       hideBtn: !hideBtn
     });
+  };
+  exampleMethod_returnsAValue = number => {
+    return number + 1;
   };
   render() {
     const { posts } = this.props;
